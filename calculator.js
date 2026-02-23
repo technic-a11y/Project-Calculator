@@ -74,7 +74,7 @@ button.forEach (button => {
             num1 += value;
             display.textContent = num1;
         }
-    } else if (value === 'BackSpace') {
+    } else if (value === 'CE') {
         if (op === '') {
             num1 = num1.slice(0, -1);
             display.textContent = num1 || '0';
@@ -83,7 +83,7 @@ button.forEach (button => {
             num2 = num2.slice(0, -1);
             display.textContent = num2 || '0';
         }
-    }
+    } 
     button.addEventListener('keyup', (event) => {
         
         if (event.key === 'Enter') {
